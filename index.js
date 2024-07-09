@@ -20,6 +20,7 @@ app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
 app.get("/", (req, res) => {
+  // console.log(req.user)
   res.render("home", { user: req.user });
 });
 
