@@ -18,6 +18,23 @@
       blog.createdBy.fullName %>
     </div>
 
+    <div class="container mt-3">
+      <h1>Comments</h1>
+      <% if (locals.user) { %>
+      <form action="/blog/comment/<%= blog._id %>" method="post">
+        <div class="mb-3">
+          <input
+            type="text"
+            name="comment"
+            class="form-control"
+            placeholder="Enter your comment"
+          />
+          <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+      </form>
+      <% } %>
+    </div>
+
     <%- include('./partials/scripts') %>
   </body>
 </html>
