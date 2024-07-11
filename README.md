@@ -15,7 +15,7 @@ This is a blogging website built with Node.js, Express, and EJS for server-side 
 - Express
 - MongoDB with Mongoose
 - EJS (Embedded JavaScript Templates)
-- Passport.js for authentication
+- JWT for authentication
 - Bootstrap for frontend styling
 
 ## Installation
