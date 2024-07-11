@@ -31,15 +31,6 @@ This is a blogging website built with Node.js, Express, and EJS for server-side 
     npm install
     ```
 
-3. **Set up environment variables:**
-
-   Create a `.env` file in the root directory and add the following:
-    ```env
-    PORT=3000
-    MONGODB_URI=mongodb://localhost:27017/bloggingWebsite
-    SESSION_SECRET=yourSessionSecret
-    ```
-
 4. **Run the application:**
     ```bash
     npm start
@@ -47,5 +38,7 @@ This is a blogging website built with Node.js, Express, and EJS for server-side 
 
     The server will start on `http://localhost:3000`.
 
-## Project Structure
+## Project Screenshots
+
+![alt text](image.png)
 
