@@ -36,7 +36,7 @@ This is a blogging website built with Node.js, Express, and EJS for server-side 
     npm start
     ```
 
-    The server will start on `http://localhost:3000`.
+    The server will start on `http://localhost:8000`.
 
 ## Project Screenshots
 
