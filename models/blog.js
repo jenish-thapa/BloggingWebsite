@@ -14,7 +14,7 @@ const blogSchema = new mongoose.Schema(
       type: String,
     },
     createdBy: {
-      type: Schema.Types.ObectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "user",
     },
   },

@@ -7,6 +7,8 @@ const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const { checkForAuthCookie } = require("./middlewares/authentication");
 
+const Blog = require("./models/blog");
+
 mongoose
   .connect("mongodb://127.0.0.1:27017/blogme")
   .then((e) => console.log("MongoDB connected"));
@@ -21,9 +23,10 @@ app.use(checkForAuthCookie("token"));
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
+  const allBlogs = await Blog.find({}).sort("createdAt");
   // console.log(req.user)
-  res.render("home", { user: req.user });
+  res.render("home", { user: req.user, blogs: allBlogs });
 });
 
 app.use("/user", userRoute);
