@@ -19,6 +19,7 @@ const PORT = 8000;
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(checkForAuthCookie("token"));
+app.use(express.static(path.resolve("./public")))
 
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
