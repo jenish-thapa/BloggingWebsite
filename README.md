@@ -40,5 +40,7 @@ This is a blogging website built with Node.js, Express, and EJS for server-side 
 
 ## Project Screenshots
 
+
 ![alt text](image.png)
 
+![alt text](image-1.png)
